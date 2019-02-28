@@ -1,5 +1,8 @@
 package cn.smbms.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  * ClassName: TestController <br/>
  * Description: <br/>
@@ -8,6 +11,11 @@ package cn.smbms.controller;
  * @author LucyBoy<br />
  * @since JDK 1.8
  */
+@Controller
 public class TestController {
     //添加测试controller
+    @RequestMapping("/test")
+    public String test(){
+        return "test";
+    }
 }
